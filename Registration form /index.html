@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Hackathon Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Hackathon Registration</h2>
+        <form id="registrationForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="teamName">Team Name (if applicable):</label>
+            <input type="text" id="teamName" name="teamName">
+
+            <label for="paymentOption">Select Payment Option:</label>
+            <select id="paymentOption" name="paymentOption" required>
+                <option value="creditCard">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <div id="creditCardSection" class="payment-section">
+                <!-- Credit Card details fields -->
+                <label for="creditCardNumber">Credit Card Number:</label>
+                <input type="text" id="creditCardNumber" name="creditCardNumber" required>
+
+                <!-- Additional credit card fields go here -->
+
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+
+            <!-- Additional payment option sections go here -->
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
